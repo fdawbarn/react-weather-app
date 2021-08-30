@@ -58,7 +58,7 @@ if (weatherData.ready) {
     ); 
      } else {
           const apiKey ="d0f75ef944c3443ad82f1c3cdedd03ad"; 
-   let apiURL = `http://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`; 
+   let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`; 
 axios.get(apiURL).then(handleResponse); 
 
 return "Loading..."
