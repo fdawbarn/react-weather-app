@@ -9,7 +9,7 @@ function App() {
       <h1>
         Weather app
       </h1>
-      <Weather />
+      <Weather defaultCity="London" />
       <footer>
 
         This project was coded by Freya Dawbarn and is {""}
