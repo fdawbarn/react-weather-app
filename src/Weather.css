@@ -27,10 +27,10 @@
   color: #b7b7b7;
 }
 
-.Weather img {
-  height: 64px;
+.Weather canvas {
   display: inline-block;
-  width: 64px;
+  margin-right: 5px;
+  margin-top: 5px;
 }
 
 .Weather .temperature {
