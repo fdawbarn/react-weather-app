@@ -12,6 +12,7 @@ function handleResponse(response) {
     
 setweatherData({
     ready: true, 
+    coordinates: response.data.coord, 
     temperature: response.data.main.temp, 
     humidity: response.data.main.humidity, 
     wind:response.data.wind.speed, 
@@ -57,7 +58,7 @@ if (weatherData.ready) {
 </div>
             </form>
             <WeatherInfo data={weatherData}/>
-            <WeatherForecast /> 
+            <WeatherForecast coordinates={weatherData.coordinates} /> 
             
          
         </div>
