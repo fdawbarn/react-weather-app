@@ -16,10 +16,16 @@ if (loaded) {
        return (
 <div className="WeatherForecast">
     <div className="row">
-<div className="col">
+        {forecast.map(function(dailyForecast, index){
+            if (index < 6) {
+return ( <div className="col" key={index}>
     
-<WeatherForecastDay data={forecast[0]} />
-</div>
+<WeatherForecastDay data={dailyForecast} />
+</div> ); 
+            }
+
+        })}
+
     </div>
      </div>
     ); 
