@@ -16,7 +16,7 @@ if (loaded) {
        return (
 <div className="WeatherForecast">
     <div className="row">
-        {forecast.map(function(dailyForecast, index){
+        {forecast.map(function (dailyForecast, index) {
             if (index < 6) {
 return ( <div className="col" key={index}>
     
@@ -31,7 +31,7 @@ return ( <div className="col" key={index}>
     ); 
 } else {
     
-    let apiKey ="d0f75ef944c3443ad82f1c3cdedd03ad"
+    let apiKey ="d0f75ef944c3443ad82f1c3cdedd03ad"; 
     let longitude = props.coordinates.lon;
     let latitude = props.coordinates.lat;
 let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
