@@ -4,5 +4,12 @@
 }
 
 .App footer {
-  font-size: 11px;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #757882;
+}
+
+.title {
+  text-align: center;
+  color: #0b409c;
 }
