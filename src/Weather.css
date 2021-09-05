@@ -46,3 +46,8 @@
   top: -14px;
   margin-left: 3px;
 }
+
+.Weather.logo {
+  max-width: 250px;
+  margin-top: 0;
+}
